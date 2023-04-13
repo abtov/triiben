@@ -12,7 +12,7 @@
     align-items: center;
 
     background-color: lightgray;
-    height: 47.55rem;
+    height: 114%;
     width: 100%;
     background-image: linear-gradient(rgba(64, 90, 64, 0.3),rgba(0, 0, 0, 0.7)) , url(images/banner-1.jpg);
 }
@@ -41,7 +41,7 @@ nav {
     padding: 2rem;
     margin: 3rem;
     margin-top: 3.5rem;
-    height: 43rem;
+    height: 49.3rem;
     width: 26.5rem;
 
     background-color: white;
@@ -61,7 +61,7 @@ nav {
     text-decoration: none;
     color: black;
     font-size: 25px;
-    transition: 300ms;
+    transition: 200ms;
     margin-top: -3px;
 }
 
@@ -75,14 +75,15 @@ nav {
 }
 
 .extra-opt > a {
-    font-size: 17.5px;
+    font-size: 15.5px;
     text-decoration: none;
     color:black;
-    transition: 300ms;
+    transition: 200ms;
 }
 
 .extra-opt > a:hover {
     color:gray;
+    text-decoration: underline;
 }
 
 .input-form {
@@ -100,13 +101,12 @@ nav {
   }
 
 .font-display, h1 {
-    font-size: 2.8rem;
+    font-size: 2.7rem;
     
     margin: 0%;
     padding-bottom: 30px;
     padding-top: 15px;
     font-family: Arial;
-    letter-spacing: 0.5px;
 
     display: flex;
     justify-content: center;
