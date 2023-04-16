@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-repeat: no-repeat;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -12,8 +13,8 @@
     align-items: center;
 
     background-color: lightgray;
-    height: 114%;
-    width: 100%;
+    height: auto;
+    width: auto;
     background-image: linear-gradient(rgba(64, 90, 64, 0.3),rgba(0, 0, 0, 0.7)) , url(images/banner-1.jpg);
 }
 
@@ -41,7 +42,7 @@ nav {
     padding: 2rem;
     margin: 3rem;
     margin-top: 3.5rem;
-    height: 49.3rem;
+    height: 46.5rem;
     width: 26.5rem;
 
     background-color: white;
