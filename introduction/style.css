@@ -30,16 +30,15 @@ nav {
 }
 
 .highlight {
-    height: 80px;
+    height: 90px;
     width : 100%;
     display: flex;
     align-items: center;
-    background-color: white;
-    transition: 80ms;
+    transition: 100ms;
 }
 .highlight:hover {
     background-color: rgba(0, 0, 0, 0.08);
-    border-bottom: 2px solid gray
+    border-bottom: 2px solid gray;
 }
 
 .nav-tree {
