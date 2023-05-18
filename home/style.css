@@ -14,6 +14,8 @@
     padding-left: 12px;
 
     height: 6rem;
+    position: sticky;
+    top: 1px;
 }
 
 .nav-tree {
@@ -24,31 +26,29 @@
 
 .logo {
     width: 220px;
-    margin-right: -190px;
+    margin-right: -150px;
 }
 
 .nav-items > i {
-    font-size: 25px;
-    margin: 10px;
+    width: 51px;
+    font-size: 23px;
+    margin: 14px;
     cursor: pointer;
-    background-color: white;
-    color: black;
-    border: 3px solid black;
+    color: white;
+    background-color: rgba(120, 120, 120, 0.9);
+    border: 3px solid darkgray;
     border-radius: 30px;
-    padding: 11px;
-    transition: 150ms;
+    padding: 12px;
+    transition: 120ms;
 }
 
 
 .nav-items > i:hover {
-    font-size: 25px;
-    margin: 10px;
-    background-color: lightgray;
-    color: white;
+    background-color: rgba(180, 180, 180, 0.1);
+    color: gray;
     border: 3px solid darkgray;
     border-radius: 30px;
-    padding: 11px;
-    box-shadow: 0px 0px 15px lightgray;
+    box-shadow: 0px 0px 10px darkgray;
 }
 
 .fa-bars{
@@ -60,10 +60,12 @@
     margin-right: 5px;
     padding: 9px;
     padding-left: 12px;
-    border: 2px solid darkgray;
+    border: 2px solid rgba(220, 220, 220, 0.8);
+    background: rgba(220, 220, 220, 0.2);
     border-right: none;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    cursor: pointer;
     transition: 80ms;
 }
 
@@ -82,14 +84,29 @@
     height: 47px;
     font-size: 17px;
     position: absolute;
-    width: 300px;
-    border: 2px solid darkgray;
+    width: 53vh;
+    border: 2px solid rgba(220, 220, 220, 0.8);
+    background: rgba(220, 220, 220, 0.5);
     border-left: none;
     padding: 11px;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     margin-left: -5px;
     letter-spacing: 2px;
+    transition: 250ms;
+}
+
+.filter:hover {
+    background-color: white;
+    border-left: none;
+}
+
+input:not(:placeholder-shown) {
+    background-color: white
+}
+  
+input:placeholder-shown {
+    background-color: rgba(220, 220, 220, 0.5);
 }
 
 #filter-show {
@@ -112,7 +129,7 @@
 }
 
 .burger-option {
-    width: 97%;
+    width: 95%;
     height: 50px;
     display: flex;
     justify-content: start;
@@ -122,19 +139,19 @@
 }
 
 .burger-option:hover {
-    background-color: rgba(150, 150, 150, 0.2);
-    border-radius: 8px;
-    border: 1px solid lightgray;
-    
+    background-color: rgba(180, 180, 180, 0.2);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px darkgray;
 }
 
 .option-menu {
     padding: 3px;
+    margin-left: -180px;
 }
 
 .option-selector {
     position: absolute;
-    width: 47vh;
+    width: 60.7vh;
     margin: 12px;
     margin-top: 15px;
     margin-bottom: 18px;
@@ -142,8 +159,8 @@
     border: 2px solid lightgray;
     border-bottom: 2px solid gray;
     box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.5);
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     border-radius: 12px;
     visibility: hidden;
 }
@@ -165,14 +182,27 @@
     width: 25px;
 }
 
-.main-content {
-    height: 100%;
-    width: 100%;
-    background:  linear-gradient(to bottom, darkgray, gray);
-}
-
 .fade {
     width: 100%;
     height: 55px;
     background-image: linear-gradient(to bottom, lightgray, darkgray);
+}
+
+
+
+.main-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  linear-gradient(to bottom, darkgray, gray);
+}
+.center-content {
+    width: 120vh;
+    height: 95%;
+    background-color: white;
+    border-radius: 42px;
+    box-shadow: 0px 0px 100px gray;
+    margin: 32px;
 }
